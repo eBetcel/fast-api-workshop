@@ -7,11 +7,11 @@ from typer.testing import CliRunner
 
 # This next line ensures tests uses its own database and settings environment
 os.environ["FORCE_ENV_FOR_DYNACONF"] = "testing"  # noqa
-# WARNING: Ensure imports from `project_name` comes after this line
+# WARNING: Ensure imports from `fast_api_workshop` comes after this line
 
-from project_name.app import app
-from project_name.cli import cli
-from project_name.config import settings
+from fast_api_workshop.app import app
+from fast_api_workshop.cli import cli
+from fast_api_workshop.config import settings
 
 
 @pytest.fixture(autouse=True)
